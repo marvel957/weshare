@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+WeShare - Find study partners around the world!
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+<form method = 'post' action="">
+    {% csrf_token %}
+    <p> are you sure you want to delete "{{obj}}" ?</p>
+    <a href="{{request.META.HTTP_REFERER}}">go back</a>
+    <button type="submit">Delete</button>
+
+    </button>
+</form>
+{% endblock %}

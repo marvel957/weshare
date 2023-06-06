@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+WeShare - Find study partners around the world!
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+<h1>room</h1>
+
+<form method = 'post' action="">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">
+        submit
+
+    </button>
+</form>
+{% endblock %}
